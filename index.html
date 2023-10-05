@@ -5,22 +5,22 @@
   </head>
   <body>
     <h1>Conversor Unidades</h1>
-	<p>Valor a ser convertido: <input type="number" id="num3" oninput="calcular2()"></p>
+    <p>Valor a ser convertido: <input type="number" id="num3" onkeyup="calcular2(event)"></p>
     <p>Unidade de Partida:
       <select id="unidades" onchange="calcular2()">
-		<option value="ha">Hectare (ha)</option>
-		<option value="alqueire">Alqueire </option>
-		<option value="m2">Metro Quadrado (m²)</option>
+	<option value="ha">Hectare (ha)</option>
+	<option value="alqueire">Alqueire </option>
+	<option value="m2">Metro Quadrado (m²)</option>
       </select>
     </p>
-	<p>Unidade de Destino:
-	  <select id="unidadesSaida" onchange="calcular2()">
-		<option value="ha">Hectare (ha)</option>
-		<option value="alqueire">Alqueire</option>
-		<option value="m2">Metro Quadrado (m²)</option>
+    <p>Unidade de Destino:
+      <select id="unidadesSaida" onchange="calcular2()">
+	<option value="ha">Hectare (ha)</option>
+	<option value="alqueire">Alqueire</option>
+	<option value="m2">Metro Quadrado (m²)</option>
       </select>
-	</p>	
-	<p id="resultado2"></p>
+    </p>	
+    <p id="resultado2"></p>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
