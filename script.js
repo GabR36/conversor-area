@@ -48,5 +48,16 @@ function calcular2(event){
 	console.log("unidadeSaida: " + unidadeSaida);
 	label.textContent = "Resultado: " + resultado;
 	num3.value = "";
+	// insercao na tabela do historico.
+	var hist = document.getElementById("historico");
+	var novaLinha = hist.insertRow();
+	var cellValor = novaLinha.insertCell(0);
+	cellValor.innerHTML = entradaValor;
+	var cellUniOrig = novaLinha.insertCell(1);
+	cellUniOrig.innerHTML = unidade;
+	var cellUniDest = novaLinha.insertCell(2);
+	cellUniDest.innerHTML = unidadeSaida;
+	var cellResultado = novaLinha.insertCell(3);
+	cellResultado.innerHTML = resultado;
     }
 }
